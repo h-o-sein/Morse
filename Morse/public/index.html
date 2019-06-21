@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <title>Chat Morse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul dir="auto" class="pages">
+    <li class="chat page">
+        <div class="chatArea">
+            <ul class="messages"></ul>
+        </div>
+        <input style="text-align: right;" dir="auto" class="inputMessage" placeholder="نوشتن متن "/>
+    </li>
+    <li class="login page">
+        <div class="form">
+            <h3 class="title">نام خود را وارد کنید</h3>
+            <input dir="auto" class="usernameInput" type="text" maxlength="14" />
+        </div>
+    </li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="socket.io.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
